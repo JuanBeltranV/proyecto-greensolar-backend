@@ -1,7 +1,7 @@
 # GreenSolar SPA – Backend (Spring Boot)
 
 > ⚠**Aviso importante**  
-> Este proyecto fue desarrollado como parte de un **trabajo universitario** para el ramo de **Ingeniería de Software** en Duoc UC.  
+> Este proyecto fue desarrollado como parte de un trabajo universitario.  
 > El objetivo es demostrar conocimientos en **desarrollo backend**, **arquitectura REST**, **seguridad con JWT** y **documentación con OpenAPI**.  
 > No está pensado para uso en producción.
 
@@ -33,7 +33,7 @@ El proyecto integra **autenticación con JWT**, **documentación automática con
 
 ---
 
-## 📂 Estructura del proyecto
+## Estructura del proyecto
 
 ```bash
 src/
@@ -45,5 +45,28 @@ src/
 pom.xml           # Configuración de dependencias Maven
 README.md         # Este documento
 .gitignore        # Archivos ignorados en Git
+```
+
+## Endpoints principales
+
+Método	Endpoint	Descripción
+GET	/api/productos	Listar productos
+POST	/api/productos	Crear un nuevo producto
+PUT	/api/productos/{id}	Actualizar producto existente
+DELETE	/api/productos/{id}	Eliminar producto
+GET	/swagger-ui.html	Acceder a la documentación Swagger
+
+## Seguridad
+
+JWT (JSON Web Token): Autenticación para rutas protegidas.
+Spring Security: Manejo de roles y control de acceso.
+Swagger/OpenAPI: Documentación interactiva con soporte para autenticación.
+
+## Pruebas unitarias
+
+El proyecto incluye JUnit 5 y Mockito para probar servicios y controladores.
+Para ejecutar los tests:
+
+mvn test
 
 
