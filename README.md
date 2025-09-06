@@ -66,7 +66,7 @@ Swagger/OpenAPI: Documentación interactiva con soporte para autenticación.
 
 El proyecto incluye JUnit 5 y Mockito para probar servicios y controladores.
 Para ejecutar los tests:
-
+```bash
 mvn test
-
+```
 
