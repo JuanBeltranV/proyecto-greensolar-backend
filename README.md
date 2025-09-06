@@ -45,12 +45,6 @@ src/main/java/
 └── config # Configuración (JWT, Swagger, Seguridad)
 
 
-```mermaid
-flowchart LR
-  Client -->|HTTP/JSON| Controller --> Service --> Repo -->|JPA| Oracle[(Oracle DB)]
-  Service -->|JWT| Security[Spring Security]
-  Controller -->|Docs| Swagger[OpenAPI UI]
-
 Endpoints principales
 Método	Endpoint	Descripción
 GET	/api/productos	Listar productos
