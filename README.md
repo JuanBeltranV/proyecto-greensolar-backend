@@ -49,18 +49,21 @@ README.md         # Este documento
 
 ## Endpoints principales
 
-Método	Endpoint	Descripción
-GET	/api/productos	Listar productos
-POST	/api/productos	Crear un nuevo producto
-PUT	/api/productos/{id}	Actualizar producto existente
-DELETE	/api/productos/{id}	Eliminar producto
-GET	/swagger-ui.html	Acceder a la documentación Swagger
+| **Método** | **Endpoint**             | **Descripción**                  |
+|-----------|---------------------------|----------------------------------|
+| **GET**    | `/api/productos`         | Listar productos                |
+| **POST**   | `/api/productos`         | Crear un nuevo producto         |
+| **PUT**    | `/api/productos/{id}`    | Actualizar producto existente   |
+| **DELETE** | `/api/productos/{id}`    | Eliminar producto              |
+| **GET**    | `/swagger-ui.html`      | Acceder a la documentación Swagger |
+
 
 ## Seguridad
 
-JWT (JSON Web Token): Autenticación para rutas protegidas.
-Spring Security: Manejo de roles y control de acceso.
-Swagger/OpenAPI: Documentación interactiva con soporte para autenticación.
+- **JWT (JSON Web Token):** Autenticación para proteger rutas y recursos.
+- **Spring Security:** Manejo de roles, permisos y control de acceso.
+- **Swagger/OpenAPI:** Documentación interactiva con soporte para autenticación.
+
 
 ## Pruebas unitarias
 
